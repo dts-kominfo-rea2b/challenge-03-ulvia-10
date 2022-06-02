@@ -23,14 +23,12 @@ const dataBelanjaan = [
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 const listBelanjaan = () =>{
  return  dataBelanjaan.map((item=>{
-  return  (`${item.nama}: ${item.harga} x ${item.kuantitas}`)
+  return  (`${item.nama} x ${item.kuantitas}`)
   }))
 }
 
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
-
-
 const totalBelanjaan = () =>{
   let total = 0
   dataBelanjaan.forEach(item => {
